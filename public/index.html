@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <script>
+    jQuery( document ).ready(function( $ ) {
+
+    $(window).on('popstate', function() {
+      location.reload(true);
+    });
+
+    });
+  </script>
+  <body>
+   
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+   
+</body>
+</html>
+
+<!-- <script defer type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'root');
+  }
+</script> -->
+<script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+  // window.onload = function()
+  // {
+  //   document.getElementsByClassName("skiptranslate")[0].style ="position:absolute;top:0;";
+  //   var ele = document.getElementsByClassName("goog-te-combo")[0];
+  //   // ele.innerHTML="";
+   
+  // }
+
+
+var perfEntries = performance.getEntriesByType("navigation");
+
+if (perfEntries[0].type === "back_forward") {
+    location.reload(true);
+}
+
+</script>
